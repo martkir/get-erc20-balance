@@ -77,7 +77,7 @@ def fetch_token_balance_batch(wallet_addresses, token_addresses, block_numbers, 
 
 
 def load_state_override_code():
-    multicall3_metadata_path = "/root/syvedev/populate/eth_balances/metadata/multicall3.json"
+    multicall3_metadata_path = "multicall3.json"
     multicall3_metadata = json.load(open(multicall3_metadata_path))
     state_override_code = multicall3_metadata["state_override_code"]
     return state_override_code
